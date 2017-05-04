@@ -1,0 +1,40 @@
+Dependencies for Project 'test1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_LPC17xx.s)(0x51C84A60)(--cpu Cortex-M3 --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx--list .\startup_lpc17xx.lst --xref -o .\startup_lpc17xx.o --depend .\startup_lpc17xx.d)
+F (.\RTX_Conf_CM.c)(0x528A70E9)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\rtx_conf_cm.o --omf_browse .\rtx_conf_cm.crf --depend .\rtx_conf_cm.d)
+I (d:\Keil\ARM\RV31\INC\RTL.h)(0x00000000)
+I (d:\Keil\ARM\RV31\INC\RTX_lib.c)(0x00000000)
+F (.\main_4tasks.c)(0x528C18D8)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\main_4tasks.o --omf_browse .\main_4tasks.crf --depend .\main_4tasks.d)
+I (d:\Keil\ARM\ARMCC\include\stdio.h)(0x00000000)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x00000000)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x00000000)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x00000000)
+I (d:\Keil\ARM\RV31\INC\RTL.h)(0x00000000)
+I (C:\Users\dipancho\Desktop\lab6_files\lab6_files\lab6_ex1_4tasks\GLCD.h)(0x4E0CBEB6)
+I (C:\Users\dipancho\Desktop\lab6_files\lab6_files\lab6_ex1_4tasks\LED.h)(0x4E0CBEC6)
+F (.\GLCD_LPC1700.c)(0x5224ADFD)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\glcd_lpc1700.o --omf_browse .\glcd_lpc1700.crf --depend .\glcd_lpc1700.d)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x00000000)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x00000000)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x00000000)
+I (C:\Users\dipancho\Desktop\lab6_files\lab6_files\lab6_ex1_4tasks\GLCD.h)(0x4E0CBEB6)
+I (C:\Users\dipancho\Desktop\lab6_files\lab6_files\lab6_ex1_4tasks\Font_24x16.h)(0x4E0CBEB6)
+F (.\LED.c)(0x528BC708)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.H)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x00000000)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x00000000)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x00000000)
+I (C:\Users\dipancho\Desktop\lab6_files\lab6_files\lab6_ex1_4tasks\LED.h)(0x4E0CBEC6)
+F (.\system_LPC17xx.c)(0x4D250C6C)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx-o .\system_lpc17xx.o --omf_browse .\system_lpc17xx.crf --depend .\system_lpc17xx.d)
+I (d:\Keil\ARM\ARMCC\include\stdint.h)(0x00000000)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x00000000)
+I (d:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x00000000)
+I (d:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x00000000)

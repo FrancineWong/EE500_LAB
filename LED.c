@@ -16,13 +16,22 @@
 #include "LPC17xx.H"                    /* LPC17xx definitions                */
 #include "LED.h"
 
-const unsigned long led_mask[] = { 1<<0, 1<<1, 1<<2, 1<<3, 1<<4, 1<<5, 1<<6, 1<<7 };
+//const unsigned long led_mask[] = { 1<<0, 1<<1, 1<<2, 1<<3, 1<<4, 1<<5, 1<<6, 1<<7 };
+const unsigned long led_mask[] = { 1UL<<0, 1UL<<1, 1UL<<2, 1UL<< 3,
+                                   1UL<< 4, 1UL<< 5, 1UL<< 6, 1UL<< 7 };
+
 
 /*----------------------------------------------------------------------------
   initialize LED Pins
  *----------------------------------------------------------------------------*/
 void LED_init (void) {
-  LPC_GPIO2->FIODIR |= 0x000000FF;                 /* LEDs on PORT2  */
+  
+	int ii;
+	LPC_GPIO2->FIODIR |= 0x000000FF;                 /* LEDs on PORT2  */
+	for(ii=0;ii<8;ii++)
+	{
+	LPC_GPIO2->FIOPIN &= ~( 1 <<ii );	
+	}
 }
 
 
@@ -32,9 +41,12 @@ void LED_init (void) {
 void LED_on  (unsigned char led) {
   int i;
 
-  for (i = 0; i < LED_NUM; i++) {
-    if (led & (1<<i)) {
-      LPC_GPIO2->FIOPIN |= led_mask[i];
+  //for (i = 0; i < LED_NUM; i++) 
+	{
+    //if (led & (1<<i)) 
+			{
+      //LPC_GPIO2->FIOPIN |= led_mask[i];
+			LPC_GPIO2->FIOPIN |= led_mask[led];
     }
   }
 }
@@ -45,9 +57,12 @@ void LED_on  (unsigned char led) {
 void LED_off (unsigned char led) {
   int i;
 
-  for (i = 0; i < LED_NUM; i++) {
-    if (led & (1<<i)) {
-      LPC_GPIO2->FIOPIN &= ~led_mask[i];
+  //for (i = 0; i < LED_NUM; i++) 
+	{
+    //if (led & (1<<i)) 
+			{
+      //LPC_GPIO2->FIOPIN &= ~led_mask[i];
+			LPC_GPIO2->FIOPIN &= ~led_mask[led];
     }
   }
 }

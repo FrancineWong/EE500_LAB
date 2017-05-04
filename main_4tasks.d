@@ -1,0 +1,11 @@
+.\main_4tasks.o: main_4tasks.c
+.\main_4tasks.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\main_4tasks.o: C:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.h
+.\main_4tasks.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+.\main_4tasks.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\main_4tasks.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\main_4tasks.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\main_4tasks.o: C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h
+.\main_4tasks.o: C:\Keil\ARM\RV31\INC\RTL.h
+.\main_4tasks.o: GLCD.h
+.\main_4tasks.o: LED.h
