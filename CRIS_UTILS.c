@@ -4,10 +4,11 @@
 #include "CRIS_UTILS.h"
 
 #define __FI        1                       /* Font index 16x24               */
-volatile int Cannon_Pos=145;//x position of cannon
-int Cannon_Vert=195;//y position of cannon
-volatile int Bullet_yPos;
-volatile int Bullet_xPos;                                                                         
+//volatile int Cannon_Pos=145;//x position of cannon
+//int Cannon_Vert=195;//y position of cannon
+//volatile int Bullet_yPos;
+//volatile int Bullet_xPos;
+
 
 void Draw_Rect( int x0, int y0, int width, int height)
 {
@@ -25,9 +26,9 @@ for(i=0; i<height; i++)
 void Draw_Cannon(int x0, int y0)
 {
     GLCD_SetTextColor(Green);
-    Draw_Rect(x0,y0,30,10);
-    Draw_Rect(x0+10,y0-10,10,10);
-	  Draw_Rect(x0+10,y0+10,10,10);
+    Draw_Rect(x0,y0,100,50);
+    Draw_Rect(x0+10,y0-10,80,10);
+	  Draw_Rect(x0+10,y0+50,80,10);
 }
 
 //Move the Cannon
@@ -61,8 +62,8 @@ void Draw_Bullet(void)
 	Bullet_yPos=179;
 	GLCD_SetTextColor(White);
 	Bullet_xPos=Cannon_Pos;
-	Draw_Rect(Cannon_Pos+10,Bullet_yPos,10,6);
-	Draw_Rect(Cannon_Pos+12,Bullet_yPos-6,10,6);
+	Draw_Rect(Cannon_Pos+40,Bullet_yPos+10,20,20);
+	Draw_Rect(Cannon_Pos+45,Bullet_yPos,10,10);
 }
 
 void Move_Bullet_Up(void)
@@ -73,3 +74,9 @@ void Move_Bullet_Up(void)
 	GLCD_SetTextColor(Black);
 	Draw_Rect(Bullet_xPos+14,Bullet_yPos+6,2,1);
 }
+
+void delay(unsigned int nCount)	{
+
+  for(; nCount != 0; nCount--);
+}
+
